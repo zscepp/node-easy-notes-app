@@ -18,7 +18,7 @@ describe('connection and then testing connection', function() {
         });
     });
     it('should be 1 if connected', function(){
-        // Our actual test: 3*3 SHOULD EQUAL 9
+        // mongoose.connection.readyState equls 1 when connected
         assert.equal(1, mongoose.connection.readyState);
       });
 });
