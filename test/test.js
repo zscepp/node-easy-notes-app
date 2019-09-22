@@ -7,7 +7,7 @@ mongoose.Promise = global.Promise;
 
 // Connecting to the database
 
-
+// Test after connection
 
 describe('connection and then testing connection', function() {
     before(function(done) {
