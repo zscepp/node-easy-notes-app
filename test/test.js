@@ -1,9 +1,9 @@
 // Configuring the database
 const dbConfig = require('../config/database.config.js');
 const mongoose = require('mongoose');
-var assert = require('assert');
-var expect = require('chai').expect;
-var request = require('request');
+const assert = require('assert');
+const expect = require('chai').expect;
+const request = require('request');
 
 mongoose.Promise = global.Promise;
 
@@ -13,9 +13,9 @@ mongoose.Promise = global.Promise;
 
 describe('connection and then testing connection', function() {
     this.beforeAll(function(done) {
-        mongoose.connect(dbConfig.url,{useNewUrlParser:true}, function(error) {
+        mongoose.connect(dbConfig.url,{useNewUrlParser:true, useUnifiedTopology: true}, function(error) {
             if (error) console.error('Error while connecting:\n%\n', error);
-            console.log('connected');
+            
             done(error);
         });
     });
