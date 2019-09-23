@@ -5,9 +5,7 @@ const mongoose = require('mongoose');
 const assert = require('assert');
 const expect = require('chai').expect;
 const request = require('request');
-var assert = require('assert');
-var expect = require('chai').expect;
-var request = require('request');
+
 
 
 mongoose.Promise = global.Promise;
