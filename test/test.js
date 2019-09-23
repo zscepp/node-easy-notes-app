@@ -26,6 +26,7 @@ describe('connection and then testing connection', function() {
             done(error);
         });
     });
+});
     it('connected to database', function(){
         // mongoose.connection.readyState equls 1 when connected
         assert.equal(1, mongoose.connection.readyState);
@@ -43,5 +44,3 @@ describe('connection and then testing connection', function() {
         });
     });
 });
-
-
