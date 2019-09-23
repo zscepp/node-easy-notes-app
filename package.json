@@ -4,7 +4,7 @@
   "description": "Notes app with Node",
   "main": "server.js",
   "scripts": {
-    "test": "mocha './test/test.js'",
+    "test": "mocha -R'./test/test.js'",
     "start": "node server.js"
   },
   "keywords": [
