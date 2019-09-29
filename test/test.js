@@ -19,12 +19,12 @@ describe('connection and then testing connection', function() {
 
         mongoose.connect(dbConfig.url,{useNewUrlParser:true, useUnifiedTopology: true}, function(error) {
 
-        mongoose.connect(dbConfig.url,{useNewUrlParser:true}, function(error) {
+       
 
             if (error) console.error('Error while connecting:\n%\n', error);
             
             done(error);
-        });
+       
     });
 });
     it('connected to database', function(){
