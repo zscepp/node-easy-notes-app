@@ -23,7 +23,7 @@ describe('connection and then testing connection', function() {
 
           //  if (error) console.error('Error while connecting:\n%\n', error);
             
-         //   done(error);
+            done();
        
     });
 });
