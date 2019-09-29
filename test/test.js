@@ -5,7 +5,9 @@ const mongoose = require('mongoose');
 const assert = require('assert');
 const expect = require('chai').expect;
 const request = require('request');
+
 const fetch = require('node-fetch');
+
 
 
 
@@ -18,6 +20,7 @@ mongoose.Promise = global.Promise;
 describe('connection and then testing connection', function() {
     this.beforeAll(function(done) {
 
+
        mongoose.connect(dbConfig.url,{useNewUrlParser:true, useUnifiedTopology: true}, function(error) {
 
             if (error) console.error('Error while connecting:\n%\n', error);
@@ -25,6 +28,7 @@ describe('connection and then testing connection', function() {
             done(error);
         });
    
+
 });
     it('connected to database', function(){
         // mongoose.connection.readyState equls 1 when connected
@@ -37,7 +41,9 @@ describe('connection and then testing connection', function() {
         });
     });
     it('Notes page status', function(done) {
+
         request('http://localhost:2000/notes' , function(error, response, body) {
+
             expect(response.statusCode).to.equal(200);
             done();
         });
