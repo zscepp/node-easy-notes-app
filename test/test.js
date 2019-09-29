@@ -38,7 +38,7 @@ describe('connection and then testing connection', function() {
         });
     });
     it('Notes page status', function(done) {
-        request('http://localhost:3000/notes' , function(error, response, body) {
+        request('https://www.yahoo.com/' , function(error, response, body) {
             expect(response.statusCode).to.equal(200);
             done();
         });
