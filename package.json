@@ -14,9 +14,9 @@
   "author": "zahid",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.19.2",
     "chai": "^4.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mocha": "^6.2.0",
     "mongoose": "^5.7.5",
     "node-fetch": "^2.6.0",
