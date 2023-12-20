@@ -20,7 +20,7 @@
     "mocha": "^6.2.0",
     "mongoose": "^5.7.5",
     "node-fetch": "^2.6.0",
-    "nodemon": "^1.19.2"
+    "nodemon": "^2.0.0"
   },
   "devDependencies": {
     "request": "^2.88.0"
